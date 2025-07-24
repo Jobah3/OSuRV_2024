@@ -1,0 +1,22 @@
+- Danas
+	- github nalozi
+	- jedan forkuje https://github.com/MilosSubotic/OSuRV_2024
+	- doda ostale kao kolaboratore
+
+
+- HW
+	- install KiCAD v8
+		https://github.com/MilosSubotic/install_everything
+
+
+	- PSU_Board
+		- 1.6x1.9"
+	- Unnulling_Board
+
+- FW:
+	- Reuse SDcard log
+	- RTC sync
+
+- SW:
+	- RTC sync
+	- camera record
