@@ -9,9 +9,9 @@
 		https://github.com/MilosSubotic/install_everything
 
 
-	- PSU_Board
+	-* PSU_Board
 		- 1.6x1.9"
-	- Unnulling_Board
+	-* Unnulling_Board
 
 - FW:
 	- Reuse SDcard log
