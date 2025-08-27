@@ -1749,16 +1749,16 @@
 		(uuid "b4e4db0d-24f9-42dc-9979-1c04b09c6e0f")
 	)
 	(junction
+		(at 168.91 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e9afd3d8-c14f-43bd-9396-4d7956b7f27e")
+	)
+	(junction
 		(at 168.91 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ea428426-c013-4585-80f9-1f4182507ac0")
-	)
-	(junction
-		(at 168.91 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f3e9bdf1-d83e-45c7-90b3-7c356543e1c9")
 	)
 	(wire
 		(pts
@@ -1822,6 +1822,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 96.52) (xy 189.23 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62d48e6e-ef04-4abb-971e-135f81518e64")
+	)
+	(wire
+		(pts
 			(xy 111.76 50.8) (xy 132.08 50.8)
 		)
 		(stroke
@@ -1859,16 +1869,6 @@
 			(type default)
 		)
 		(uuid "81453a08-311e-4199-954f-c25b4117e889")
-	)
-	(wire
-		(pts
-			(xy 168.91 96.52) (xy 189.23 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "827c7918-fb03-47b0-9c34-6a71bcf1ece6")
 	)
 	(wire
 		(pts
@@ -3496,7 +3496,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_US")
-		(at 168.91 100.33 0)
+		(at 168.91 100.33 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3505,21 +3505,21 @@
 		(fields_autoplaced yes)
 		(uuid "fdc09cb0-3aae-4bcb-bf96-329fc4038a13")
 		(property "Reference" "C2"
-			(at 172.72 98.4249 0)
+			(at 172.72 99.6949 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "1000u 16V"
-			(at 172.72 100.9649 0)
+			(at 172.72 102.2349 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"

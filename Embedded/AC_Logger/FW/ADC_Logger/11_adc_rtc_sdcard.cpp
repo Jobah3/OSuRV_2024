@@ -48,7 +48,7 @@ ISR(TIMER1_COMPA_vect) {
 
 	mux_select++;
 
-	// Steer to nexmux_selecttrue;
+	// Steer to next mux_select
 	if (mux_select == 6){
 		mux_select = 0;
 		to_send = true;

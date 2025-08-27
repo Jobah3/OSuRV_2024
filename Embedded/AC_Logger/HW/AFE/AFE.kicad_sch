@@ -1017,7 +1017,6 @@
 	)
 	(label "A1"
 		(at 173.99 72.39 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1028,7 +1027,6 @@
 	)
 	(label "A0"
 		(at 173.99 69.85 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1039,7 +1037,6 @@
 	)
 	(label "A4"
 		(at 173.99 106.68 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1050,7 +1047,6 @@
 	)
 	(label "A3"
 		(at 173.99 93.98 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1061,7 +1057,6 @@
 	)
 	(label "A5"
 		(at 173.99 109.22 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1072,7 +1067,6 @@
 	)
 	(label "A2"
 		(at 173.99 91.44 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1084,7 +1078,6 @@
 	(hierarchical_label "S3_OUT"
 		(shape output)
 		(at 146.05 90.17 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1096,7 +1089,6 @@
 	(hierarchical_label "A[0..5]"
 		(shape output)
 		(at 201.93 52.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1108,7 +1100,6 @@
 	(hierarchical_label "L1_OR_R3_IN"
 		(shape input)
 		(at 57.15 64.77 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1120,7 +1111,6 @@
 	(hierarchical_label "L1_OR_R3_OUT"
 		(shape output)
 		(at 146.05 64.77 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1132,7 +1122,6 @@
 	(hierarchical_label "S3_IN"
 		(shape input)
 		(at 57.15 90.17 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1144,7 +1133,6 @@
 	(hierarchical_label "T3_OUT"
 		(shape output)
 		(at 151.13 111.76 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1156,7 +1144,6 @@
 	(hierarchical_label "T3_IN"
 		(shape input)
 		(at 50.8 111.76 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1228,6 +1215,12 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/eec4c458-de7f-451c-a2d0-a930e00c13e2/00000000-0000-0000-0000-00006294afea"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -1290,6 +1283,12 @@
 			(project ""
 				(path "/09c92b2a-ba10-45d0-ac91-8ea09cf68577/00000000-0000-0000-0000-00006294b008"
 					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/eec4c458-de7f-451c-a2d0-a930e00c13e2/00000000-0000-0000-0000-00006294afea"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -1358,6 +1357,12 @@
 		(instances
 			(project ""
 				(path "/09c92b2a-ba10-45d0-ac91-8ea09cf68577/00000000-0000-0000-0000-00006294b008"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/eec4c458-de7f-451c-a2d0-a930e00c13e2/00000000-0000-0000-0000-00006294afea"
 					(reference "R1")
 					(unit 1)
 				)
@@ -1431,6 +1436,12 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/eec4c458-de7f-451c-a2d0-a930e00c13e2/00000000-0000-0000-0000-00006294afea"
+					(reference "R2")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -1493,6 +1504,12 @@
 			(project ""
 				(path "/09c92b2a-ba10-45d0-ac91-8ea09cf68577/00000000-0000-0000-0000-00006294b008"
 					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/eec4c458-de7f-451c-a2d0-a930e00c13e2/00000000-0000-0000-0000-00006294afea"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -1565,6 +1582,12 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/eec4c458-de7f-451c-a2d0-a930e00c13e2/00000000-0000-0000-0000-00006294afea"
+					(reference "C1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -1627,6 +1650,12 @@
 			(project ""
 				(path "/09c92b2a-ba10-45d0-ac91-8ea09cf68577/00000000-0000-0000-0000-00006294b008"
 					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/eec4c458-de7f-451c-a2d0-a930e00c13e2/00000000-0000-0000-0000-00006294afea"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -1708,6 +1737,11 @@
 					(page "#")
 				)
 			)
+			(project "AFE_Board"
+				(path "/eec4c458-de7f-451c-a2d0-a930e00c13e2/00000000-0000-0000-0000-00006294afea"
+					(page "#")
+				)
+			)
 		)
 	)
 	(sheet
@@ -1786,6 +1820,11 @@
 					(page "#")
 				)
 			)
+			(project "AFE_Board"
+				(path "/eec4c458-de7f-451c-a2d0-a930e00c13e2/00000000-0000-0000-0000-00006294afea"
+					(page "#")
+				)
+			)
 		)
 	)
 	(sheet
@@ -1861,6 +1900,11 @@
 		(instances
 			(project "Box"
 				(path "/09c92b2a-ba10-45d0-ac91-8ea09cf68577/00000000-0000-0000-0000-00006294b008"
+					(page "#")
+				)
+			)
+			(project "AFE_Board"
+				(path "/eec4c458-de7f-451c-a2d0-a930e00c13e2/00000000-0000-0000-0000-00006294afea"
 					(page "#")
 				)
 			)
