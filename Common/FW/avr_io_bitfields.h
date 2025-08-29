@@ -573,14 +573,13 @@ typedef struct {
 	unsigned _res1 : 1;
 } bf_adcsrb;
 #define adcsrb (*((volatile bf_adcsrb*)(&ADCSRB)))
-*/
 
 typedef struct {
 	unsigned adcxd : 5;
 	unsigned _res : 2;
 } bf_didr0;
 #define didr0 (*((volatile bf_didr0*)(&DIDR0)))
-
+*/
 
 typedef union {
 	struct {
@@ -854,6 +853,43 @@ typedef union {
 } bf_acmp;
 #define acmp (*((volatile bf_acmp*)(&ACSR)))
 
+typedef union {
+	struct {
+		u16 adcw;
+		u8 adcsra;
+		u8 adcsrb;
+
+		u8 admux;
+		u8 _res;
+		u8 didr0;
+	};
+	struct {
+		// adcw
+		unsigned adcl    : 8;
+		unsigned adch    : 8;
+		// adcsra
+		unsigned adps    : 3;
+		unsigned adie    : 1;
+		unsigned adif    : 1;
+		unsigned adate   : 1;
+		unsigned adsc    : 1;
+		unsigned aden    : 1;
+		// adcsrb
+		unsigned adts    : 3;
+		unsigned         : 5;
+		// admux
+		unsigned mux     : 4;
+		unsigned         : 1;
+		unsigned adlar   : 1;
+		unsigned refs    : 2;
+		// _res
+		unsigned         : 8;
+		// didr0
+		unsigned adcd    : 6;
+		unsigned         : 2;
+	};
+} bf_adc;
+#define adc (*((volatile bf_adc*)(&ADCL)))
 
 #endif
 

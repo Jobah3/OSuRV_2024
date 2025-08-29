@@ -29,20 +29,15 @@ volatile smpl_pkg pkg = {
 	.data = {0}
 };
 
-static void set_adc_mux(u8 mux)
-{
-	set_bf(adc.g.admux, {
-		.mux = mux,
-		.adlar = 0,	 // Left align ADC value to 8 bits from ADCH register.
-		.refs = 0b01 // Vcc TODO
-	});
+static void set_adc_mux(u8 mux) {
+	adc.mux = mux;
 }
 
 ISR(TIMER1_COMPA_vect) {
 	// Take prev sample.
 	//Serial.println(a1);
 	//a1++;
-	u16 sample = adc.r.adcw;
+	u16 sample = adc.adcw;
 
 	pkg.data.val_array[mux_select] = sample;
 
@@ -59,7 +54,7 @@ ISR(TIMER1_COMPA_vect) {
 	delay(20);
 	
 	// Start new sample.
-	adc.f.adsc = 1;
+	adc.adsc = 1;
 }
 
 void setup() {
@@ -69,24 +64,26 @@ void setup() {
 	// ADC setup.
 
 	// Disable digital buffer on analog input.
-	adc.r.didr_0 = 0xff;
+	adc.adcd = 0x3f;
 
 	set_adc_mux(mux_select);
 
-	adc.g.adcsrb.adts = 0; // Free Running mode
+	adc.adts = 0; // Free Running mode
 
-	set_bf(adc.g.adcsra, {
-		// f_adc_in = 38.5 kHz
-		// f_smpl_max = 77 kHz
-		// f_smpl = 9.6MHz/16/13 = 46.154 kHz
-		// f_in = 46.154/2 = 23 kHz
-		.adps = 0b100, // 16 prescaler.
-		.adie  = 0, // No IRQ.
-		.adif  = 0, // Clear IRQ.
-		.adate = 0, // Auto trigger disabled.
-		.adsc = 1, // Warm up ADC, because first sampling is 25 CLKs.
-		.aden = 1 // Enable ADC.
-	});
+	// FIXME set_bf(adc.adcsra, {
+	// f_adc_in = 38.5 kHz
+	// f_smpl_max = 77 kHz
+	// f_smpl = 9.6MHz/16/13 = 46.154 kHz
+	// f_in = 46.154/2 = 23 kHz
+	adc.adps = 0b100; // 16 prescaler.
+	adc.adie  = 0; // No IRQ.
+	adc.adif  = 0; // Clear IRQ.
+	adc.adate = 0; // Auto trigger disabled.
+	adc.adsc = 1; // Warm up ADC, because first sampling is 25 CLKs.
+	adc.aden = 1;// Enable ADC.
+
+	adc.adlar = 0; // Left align ADC value to 8 bits from ADCH register.
+	adc.refs = 0b01; // Vcc
 
 
 
