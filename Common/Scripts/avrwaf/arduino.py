@@ -39,7 +39,7 @@ def parse_arduino_cfg(fn):
 			if line2 == '':
 				continue
 
-			m = re.match('([\w\.]+)=(.*)', line2)
+			m = re.match('([\w\.-]+)=(.*)', line2)
 			key_path = m.group(1)
 			raw_value = m.group(2).lstrip().rstrip()
 
