@@ -784,7 +784,7 @@
 		(uuid "85371e48-e296-4997-9af3-3ccc3e4217d9")
 	)
 	(label "L1_OR_R3_IN"
-		(at 106.68 81.28 180)
+		(at 106.68 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -794,7 +794,7 @@
 		(uuid "91ef557e-96ea-4b11-bb46-d57e8f5041d5")
 	)
 	(label "N_IN"
-		(at 106.68 83.82 180)
+		(at 106.68 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -804,7 +804,7 @@
 		(uuid "a5d5891b-34fa-4c75-9cc1-b2ee44300a0b")
 	)
 	(label "E"
-		(at 106.68 78.74 180)
+		(at 106.68 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)

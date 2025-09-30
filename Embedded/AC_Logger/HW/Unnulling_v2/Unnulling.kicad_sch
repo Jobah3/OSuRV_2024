@@ -5,142 +5,6 @@
 	(uuid "98b529e5-ac79-48d8-87f6-58542c37b0d9")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:C"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:C_Polarized_US"
 			(pin_numbers hide)
 			(pin_names
@@ -1308,7 +1172,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 125.73) (xy 44.45 125.73)
+			(xy 36.83 125.73) (xy 55.88 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1318,7 +1182,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 82.55) (xy 41.91 82.55)
+			(xy 34.29 82.55) (xy 53.34 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1455,26 +1319,6 @@
 			(type default)
 		)
 		(uuid "5f33fb48-5639-4af2-92fc-9330c7e836de")
-	)
-	(wire
-		(pts
-			(xy 49.53 82.55) (xy 53.34 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75796a16-8410-4dd9-9c25-5f730fff8fca")
-	)
-	(wire
-		(pts
-			(xy 52.07 125.73) (xy 55.88 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "884b77b8-bd67-4300-ad2b-a2fb68f09099")
 	)
 	(wire
 		(pts
@@ -1702,7 +1546,7 @@
 		(uuid "5b7d5801-e1c3-4be1-989a-aff379f51038")
 	)
 	(label "L1_OR_R3_IN"
-		(at 38.1 82.55 180)
+		(at 49.53 82.55 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1732,7 +1576,7 @@
 		(uuid "724924c2-879b-46ac-8104-ad1a2a5668d1")
 	)
 	(label "N_IN"
-		(at 39.37 125.73 180)
+		(at 50.8 125.73 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1823,7 +1667,7 @@
 	)
 	(hierarchical_label "L1_OR_R3_IN"
 		(shape input)
-		(at 22.86 82.55 180)
+		(at 34.29 82.55 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1845,7 +1689,7 @@
 	)
 	(hierarchical_label "N_IN"
 		(shape input)
-		(at 25.4 125.73 180)
+		(at 36.83 125.73 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1867,7 +1711,7 @@
 	)
 	(hierarchical_label "E"
 		(shape input)
-		(at 34.29 101.6 180)
+		(at 33.02 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2050,7 +1894,7 @@
 				)
 			)
 		)
-		(property "Value" "100 1W"
+		(property "Value" "10k 1W"
 			(at 67.31 78.74 90)
 			(effects
 				(font
@@ -2396,74 +2240,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 48.26 125.73 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "752ffccc-cf45-4285-81fd-0e5072f2d64c")
-		(property "Reference" "C2"
-			(at 48.26 118.11 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220n 310V X2"
-			(at 48.26 120.65 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L16.5mm_W8.7mm_P15.00mm_MKT"
-			(at 52.07 124.7648 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 48.26 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 48.26 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f8b06b8f-1325-42e6-91ac-d5197374511c")
-		)
-		(pin "2"
-			(uuid "6833900e-5e11-432f-984c-8d25cd90ad56")
-		)
-		(instances
-			(project "Unnulling_Board"
-				(path "/496f50f6-b2f3-4b8a-9f23-d0b8419323e8/2b83cf42-630a-4dc0-9357-07fac29e3f84"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 69.85 125.73 90)
 		(unit 1)
@@ -2481,7 +2257,7 @@
 				)
 			)
 		)
-		(property "Value" "100 1W"
+		(property "Value" "10k 1W"
 			(at 69.85 121.92 90)
 			(effects
 				(font
@@ -2532,74 +2308,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 45.72 82.55 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c0fc5333-c0c6-4b05-b817-cba0984a9466")
-		(property "Reference" "C1"
-			(at 45.72 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220n 310V X2"
-			(at 45.72 77.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L16.5mm_W8.7mm_P15.00mm_MKT"
-			(at 49.53 81.5848 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 45.72 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 45.72 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5e5c6648-c836-4e42-9cda-bfa22fe76753")
-		)
-		(pin "2"
-			(uuid "4b28bc9d-093d-4281-9bd5-4b00ecb884bd")
-		)
-		(instances
-			(project ""
-				(path "/496f50f6-b2f3-4b8a-9f23-d0b8419323e8/2b83cf42-630a-4dc0-9357-07fac29e3f84"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N4007")
 		(at 59.69 125.73 180)
 		(unit 1)
@@ -2625,7 +2333,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal"
+		(property "Footprint" "For_Rasterboard:D_DO-35_SOD27_Pinf_Horizontal"
 			(at 59.69 121.285 0)
 			(effects
 				(font
@@ -2693,7 +2401,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal"
+		(property "Footprint" "For_Rasterboard:D_DO-35_SOD27_Pinf_Horizontal"
 			(at 57.15 78.105 0)
 			(effects
 				(font
