@@ -6907,6 +6907,7 @@
 	(gr_rect
 		(start 43.18 35.56)
 		(end 101.6 91.44)
+		(locked yes)
 		(stroke
 			(width 0.1)
 			(type solid)
